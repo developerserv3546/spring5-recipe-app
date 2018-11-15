@@ -1,8 +1,9 @@
 package guru.springframework.domain;
 
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class CategoryTest {
 
@@ -17,7 +18,7 @@ public class CategoryTest {
     public void getId() {
         Long id = 4L;
         category.setId(id);
-        Assert.assertEquals(id, category.getId());
+        assertEquals(id, category.getId());
     }
 
     @Test
